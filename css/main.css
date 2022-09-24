@@ -1,29 +1,121 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
 .nav-top-right{
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
 }
-body{
-    background-image: url('../img/background-astronaut.jpg');
-    color: #ffffff;
+
+button span {
+    width: 80px;
+    height: 10px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    display: block;
+    background-color: black;
+    top: 0px;
+    transition: all 0.6s ease-in-out;
 }
+
+button span:nth-child(2) {
+    position: relative;
+    right: 7px;
+}
+button.menu-open span:nth-child(2) {
+    position: relative;
+    right: 0px;
+}
+
+
+.arrow-right{
+    position: relative;
+    top: 0.4vw;
+    left: 0;
+    width: 2vw;
+    display:inline-block;;
+    height: 2vw;
+    transition: all 0.6s ease-in-out;
+}
+
+.floater-link:hover .arrow-right{
+    left:2vw;
+}
+
+.arrow-right span {
+    position: relative;
+    width: 3vw;
+    height: 0.3vw;
+    border-radius: 3px;
+    display: block;
+    background-color: black;
+    top: -0.4vw;
+   
+    transition: all 0.6s ease-in-out;
+}
+.arrow-right span:nth-child(2) {
+    width: 1.5vw;
+    height: 1.5vw;
+    top: -1.45vw;
+    background-color: #ffffff00;
+    border-top: 0.3vw solid black;
+    border-right: 0.3vw solid black;
+    left:1.2vw;
+    transform: rotate(45deg);
+}
+.arrow-right span:nth-child(3) {
+    display: none;
+    width: 1.5vw; 
+    height: 0.2vw;
+    top: 0.15vw;
+    left:1.5vw;
+    transform: rotate(-45deg);
+}
+
+.first-page{
+    background-image: url('../img/astronaut.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+}
+.second-page{
+    background-image: url('../img/galaxy.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+}
+
 .svg-icon{
     filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(334deg) brightness(106%) contrast(105%);
 }
+
+section{
+    height: 100vh;
+    background-color: #77aaff;
+}
+
 .lander-floater{
     position: relative;
-    width:400px;
-    height:400px;
-    top: 50px;
-    left: 50px;
-    background-color: #00000070;
-    border: solid 4px #ffffff;
+    box-sizing: border-box;
+    padding:0 1.5em;
+    width:40vw;
+    height:43vw;
+    left: 12.5vw;
+    top: 17.6vw;
+    background-color: #ffffff70;
+    border: solid 7px #000000;
 }
 .svg-small{
     height: 1.25em;
 }
 .plain-link{
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
 }
 .svg-text-adjust{
@@ -35,11 +127,14 @@ footer{
     left: 10px;
 }
 h1{
-    font-size: 5em;
+    margin: 0;  
+    font-size: 10vw;
     text-align: center;
 }
 .floater-link{
     position: absolute;
-    right: 10px;
+    font-size: 2vw;
+    font-weight: 400;
+    left: 10px;
     bottom: 10px;
 }
