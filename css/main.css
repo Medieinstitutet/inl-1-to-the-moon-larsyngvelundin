@@ -2,8 +2,23 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.col{
+    position:relative;
+}
+h2{
+    position:relative;
+}
+
+.desktop-only{
+    display:none;
+}
+
+.nav-top{
+    position:relative;
+}
+
 .nav-top-right{
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     width: 90px;
@@ -88,7 +103,7 @@ button.menu-open span:nth-child(2) {
     background-image: url('../img/galaxy.jpg');
     background-size: cover;
     background-position: center;
-    color: #000000;
+    color: #ffffff;
 }
 
 .svg-icon{
@@ -97,7 +112,7 @@ button.menu-open span:nth-child(2) {
 
 section{
     height: 100vh;
-    background-color: #77aaff;
+
 }
 
 .lander-floater{

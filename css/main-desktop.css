@@ -1,0 +1,9 @@
+@media screen and (min-width: 1000px) {
+    .second-page{
+        display:flex;
+        gap: 10vw;
+    }
+    .col{
+        width:50%;
+    }
+}
