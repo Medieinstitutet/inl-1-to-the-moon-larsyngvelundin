@@ -1,0 +1,247 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+.col {
+    position: relative;
+}
+
+.col {
+    padding:8vw;
+    padding-bottom: 0vw;
+    h2 {
+        margin: 0px;
+        margin-bottom: -12vw;
+        padding-top: 2vw;
+        font-size: 14vw;
+        display: block;
+        z-index: 1;
+        span:nth-child(1) {
+            z-index: 1;
+            position: relative;
+            text-shadow: 2px 2px 5px #000000;
+            font-weight: 600;
+        }
+        span:nth-child(2) {
+            font-family: 'Times New Roman', Times, serif;
+            color: #999999;
+            position: relative;
+            font-size: 17vw;
+            left: 14vw;
+            top: -11.5vw;
+            z-index: 0;
+        }
+    }
+    h3{
+        font-size: 5vw;
+    }
+    p{
+        font-size: 2.8vw;
+    }
+    blockquote{
+        font-size: 4vw;
+        font-style: italic;
+        margin-bottom: -6vw;
+    }
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.nav-top {
+    position: relative;
+}
+
+
+a:hover .arrow-right {
+    left: 2vw;
+}
+
+.arrow-right span {
+    position: relative;
+    width: 3vw;
+    height: 0.3vw;
+    border-radius: 3px;
+    display: block;
+    background-color: black;
+    top: -0.4vw;
+
+    transition: all 0.6s ease-in-out;
+}
+
+.arrow-right span:nth-child(2) {
+    width: 1.5vw;
+    height: 1.5vw;
+    top: -1.45vw;
+    background-color: #ffffff00;
+    border-top: 0.3vw solid black;
+    border-right: 0.3vw solid black;
+    left: 1.2vw;
+    transform: rotate(45deg);
+}
+
+.arrow-right span:nth-child(3) {
+    display: none;
+    width: 1.5vw;
+    height: 0.2vw;
+    top: 0.15vw;
+    left: 1.5vw;
+    transform: rotate(-45deg);
+}
+
+.first-page {
+    background-image: url('../img/astronaut.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+}
+
+.second-page {
+    background-image: url('../img/galaxy.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.svg-icon {
+    filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(334deg) brightness(106%) contrast(105%);
+}
+
+section {
+    height: 100vh;
+
+}
+
+.lander-floater {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 1.5em;
+    width: 40vw;
+    height: 43vw;
+    left: 12.5vw;
+    top: 17.6vw;
+    background-color: #ffffff70;
+    border: solid 7px #000000;
+}
+
+.svg-small {
+    height: 1.25em;
+}
+
+.plain-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.svg-text-adjust {
+    margin-bottom: -0.3em;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    font-size: 3vw;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: auto;
+    background-color: #02061f;
+    color:#d200a2;
+    p{
+        padding: 0 3vw;
+        text-shadow:
+        0 0 3px #b10154, 
+        0 0 4px #b10154, 
+        0 0 5px #b10154;
+    }
+    button{
+        box-sizing: border-box;
+        display: inline-block;
+        position:relative;
+        background-color: #081160;
+        font-weight: 600;
+        height: 7vw;
+        width:20vw;
+        padding: 2vw;
+        color: #ffffff;
+    }
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+button {
+    span {
+        width: 80px;
+        height: 10px;
+        margin-bottom: 13px;
+        border-radius: 10px;
+        display: block;
+        background-color: black;
+        top: 0px;
+        transition: all 0.3s ease-in-out;
+    }
+    span:nth-child(2) {
+        position: relative;
+        right: 7px;
+    }
+}
+
+.nav-top-right:hover span:nth-child(2) {
+    position: relative;
+    right: 0px;
+}
+
+.floater-link {
+    position: absolute;
+    font-size: 2vw;
+    font-weight: 400;
+    left: 10px;
+    bottom: 10px;
+}
+
+.arrow-right {
+    position: relative;
+    top: 0.4vw;
+    left: 0;
+    width: 2vw;
+    display: inline-block;
+    height: 2vw;
+    transition: all 0.6s ease-in-out;
+}
+
+.pink-link{
+    font-size: 2.8vw;
+    color: #d200a2;
+    img{
+        position: relative;
+        height: 3.5vw;
+        width: 3.5vw;
+        top: 1vw;
+
+    }
+}
+
+.pink-svg{
+    filter: invert(11%) sepia(98%) saturate(7084%) hue-rotate(308deg) brightness(92%) contrast(101%);
+}
+
+.hidden{
+    display: none;
+}
