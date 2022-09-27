@@ -3,14 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>TO THE MOON</title>
   <meta name="description" content="Ground Control to Major Tom. Take your protein pills and put your helmet on.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content=""> -->
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -23,13 +18,10 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/main-desktop.css">
-
-
   <!-- <meta name="theme-color" content="#fafafa"> -->
 </head>
 
 <body>
-
   <section class="first-page">
     <header class="nav-top">
       <button class="nav-top-right" id="menu-button">
@@ -43,15 +35,12 @@
         <a class="plain-link" href="#">ABOUT MAJOR TOM</a>
       </div>
     </header>
-
     <div class="lander-floater">
       <h1>TO THE MOON</h1>
       <a class="plain-link floater-link" href="#">
         Read our story
-        <img class="arrow-right" src="img/arrow-right.svg" alt="triangle with all three sides equal" height="87"
-          width="100" />
+        <span class="arrow-right"></span>
       </a>
-
     </div>
   </section>
   <section class="second-page">
@@ -83,8 +72,7 @@
         <p>Far above the moon</p>
         <p>Planet Earth is blue</p>
         <p>And there's nothing I can do</p>
-        <a class="pink-link" href="#">Read more about Major Tom<img class="arrow-right pink-svg"
-            src="img/arrow-right.svg" alt="triangle with all three sides equal" height="87" width="100" /></a>
+        <a class="pink-link" href="#">Read more about Major Tom<span class="arrow-right"></span></a>
       </div>
     </div>
   </section>
@@ -96,8 +84,12 @@
     <button id="cookie-button">Accept</button>
   </footer>
   <script>
-    const menubutton = document.querySelector("#menu-button");
-    menubutton.addEventListener('click', toggleMenu);
+    document.querySelectorAll('.fullscreen-menu a').forEach(item => {
+      item.addEventListener('click', toggleMenu)
+    })
+    const menuButton = document.querySelector("#menu-button");
+    menuButton.addEventListener('click', toggleMenu);
+
     const fullscreenMenu = document.querySelector("#fullscreen-menu");
     const landerFloater = document.querySelector(".lander-floater");
     function toggleMenu() {
@@ -112,5 +104,4 @@
     }
   </script>
 </body>
-
 </html>

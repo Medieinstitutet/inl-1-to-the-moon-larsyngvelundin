@@ -1,99 +1,119 @@
+/* MOBILE CSS FIRST */
+
+/* GENERAL CSS */
 * {
     font-family: 'Rubik', sans-serif;
 }
 
-.col {
-    position: relative;
-    padding: 8vw;
-    padding-bottom: 0vw;
-
-    h2 {
-        margin: 0px;
-        margin-bottom: -12vw;
-        padding-top: 2vw;
-        font-size: 14vw;
-        display: block;
-        z-index: 1;
-
-        span:nth-child(1) {
-            z-index: 1;
-            position: relative;
-            text-shadow: 2px 2px 5px #000000;
-            font-weight: 600;
-        }
-
-        span:nth-child(2) {
-            font-family: 'Times New Roman', Times, serif;
-            color: #999999;
-            position: relative;
-            font-size: 17vw;
-            left: 14vw;
-            top: -11.5vw;
-            z-index: 0;
-        }
-    }
-
-    h3 {
-        font-size: 5vw;
-    }
-
-    p {
-        font-size: 2.8vw;
-    }
-
-    blockquote {
-        font-size: 4vw;
-        font-style: italic;
-        margin-bottom: -6vw;
-    }
+.hidden {
+    display: none;
 }
-
-
 
 .desktop-only {
     display: none;
 }
 
-.nav-top {
-    position: relative;
-}
-
-
 a:hover .arrow-right {
     left: 2vw;
 }
 
-.arrow-right span {
-    position: relative;
-    width: 3vw;
-    height: 0.3vw;
-    border-radius: 3px;
-    display: block;
-    background-color: black;
-    top: -0.4vw;
+section {
+    min-height: 100vh;
+}
 
+.plain-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.arrow-right{
+    top: 0.1vw;
+    position:relative;
+    display: inline-block;
+    left: 0;
+    width: 3vw;
+    height: 1.5vw;
+    background-color: black;
+    clip-path: polygon(0 55%, 
+    0 45%, 
+    90% 45%, 
+    71.25% 7.5%, 
+    75% 0, 
+    100% 50%, 
+    75% 100%, 
+    71.25% 92.5%, 
+    90% 55%);
     transition: all 0.6s ease-in-out;
 }
 
-.arrow-right span:nth-child(2) {
-    width: 1.5vw;
-    height: 1.5vw;
-    top: -1.45vw;
-    background-color: #ffffff00;
-    border-top: 0.3vw solid black;
-    border-right: 0.3vw solid black;
-    left: 1.2vw;
-    transform: rotate(45deg);
+/* FIRST PAGE */
+/* NAVIGATION BAR */
+
+.nav-top {
+    position: relative;
 }
 
-.arrow-right span:nth-child(3) {
-    display: none;
-    width: 1.5vw;
-    height: 0.2vw;
-    top: 0.15vw;
-    left: 1.5vw;
-    transform: rotate(-45deg);
+.nav-top-right {
+    z-index: 5;
+    span {
+        width: 80px;
+        height: 10px;
+        margin-bottom: 13px;
+        border-radius: 10px;
+        display: block;
+        background-color: black;
+        top: 0px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    span:nth-child(2) {
+        position: relative;
+        right: 7px;
+    }
 }
+.nav-top-right:hover span:nth-child(2) {
+    position: relative;
+    right: 0px;
+}
+
+/* NAVIGATION BAR --- OPEN MENU */
+
+.fullscreen-menu {
+    display: none;
+}
+
+.fullscreen-menu.fullscreen-menu-open {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20vh;
+    background-color: #ffffffcc;
+    a {
+        display: block;
+        text-align: center;
+        padding: 0 19vw;
+        margin-bottom: 12vw;
+        font-size: 9vw;
+        font-weight: 600;
+        text-shadow: 0px 0.7vw #74747466;
+    }
+}
+
+/* FIRST PAGE */
+/* MAIN CONTENT (TO THE MOON) */
 
 .first-page {
     background-image: url('../img/astronaut.jpg');
@@ -102,20 +122,8 @@ a:hover .arrow-right {
     color: #000000;
 }
 
-.second-page {
-    background-image: url('../img/galaxy.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-}
-
-.svg-icon {
-    filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(334deg) brightness(106%) contrast(105%);
-}
-
-section {
-    min-height: 100vh;
-
+.lander-floater.fullscreen-menu-open {
+    display: none;
 }
 
 .lander-floater {
@@ -133,24 +141,87 @@ section {
     top: 17.6vw;
     background-color: #ffffff70;
     border: solid 7px #000000;
+    .floater-link {
+        position: absolute;
+        font-size: 2vw;
+        font-weight: 400;
+        left: 10px;
+        bottom: 10px;
+    }
 }
 
-.lander-floater.fullscreen-menu-open {
-    display: none;
+/* SECOND PAGE */
+
+.second-page {
+    background-image: url('../img/galaxy.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
 }
 
-.svg-small {
-    height: 1.25em;
+.tinted-background {
+    background-color: #11111155;
+    height: 100%;
+    padding-bottom: 60px;
 }
 
-.plain-link {
-    color: #000000;
-    text-decoration: none;
+.pink-svg {
+    filter: invert(11%) sepia(98%) saturate(7084%) hue-rotate(308deg) brightness(92%) contrast(101%);
 }
 
-.svg-text-adjust {
-    margin-bottom: -0.3em;
+.col {
+    position: relative;
+    padding: 8vw;
+    padding-bottom: 0vw;
+    h2 {
+        margin: 0px;
+        margin-bottom: -12vw;
+        padding-top: 2vw;
+        font-size: 14vw;
+        display: block;
+        z-index: 1;
+        span:nth-child(1) {
+            z-index: 1;
+            position: relative;
+            text-shadow: 2px 2px 5px #000000;
+            font-weight: 600;
+        }
+        span:nth-child(2) {
+            font-family: 'Times New Roman', Times, serif;
+            color: #999999;
+            position: relative;
+            font-size: 17vw;
+            left: 14vw;
+            top: -11.5vw;
+            z-index: 0;
+        }
+    }
+    h3 {
+        font-size: 5vw;
+    }
+    p {
+        font-size: 2.8vw;
+    }
+    blockquote {
+        font-size: 4vw;
+        font-style: italic;
+        margin-bottom: -6vw;
+    }
+    .pink-link {
+        font-size: 2.8vw;
+        color: #d200a2;
+        .arrow-right {
+            position: relative;
+            background-color: #d200a2;
+            margin-left: 1vw;
+            height: 2.8vw;
+            width: 5.6vw;
+            top: 0.5vw;
+        }
+    }
 }
+
+/* COOKIE FOOTER */
 
 footer {
     position: fixed;
@@ -184,108 +255,5 @@ footer {
     }
 }
 
-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 90px;
-    height: 90px;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-}
 
-button {
-    span {
-        width: 80px;
-        height: 10px;
-        margin-bottom: 13px;
-        border-radius: 10px;
-        display: block;
-        background-color: black;
-        top: 0px;
-        transition: all 0.3s ease-in-out;
-    }
-
-    span:nth-child(2) {
-        position: relative;
-        right: 7px;
-    }
-}
-
-.nav-top-right {
-    z-index: 5;
-}
-
-.nav-top-right:hover span:nth-child(2) {
-    position: relative;
-    right: 0px;
-}
-
-.floater-link {
-    position: absolute;
-    font-size: 2vw;
-    font-weight: 400;
-    left: 10px;
-    bottom: 10px;
-}
-
-.arrow-right {
-    position: relative;
-    top: 0.4vw;
-    left: 0;
-    width: 2vw;
-    display: inline-block;
-    height: 2vw;
-    transition: all 0.6s ease-in-out;
-}
-
-.pink-link {
-    font-size: 2.8vw;
-    color: #d200a2;
-
-    img {
-        position: relative;
-        height: 3.5vw;
-        width: 3.5vw;
-        top: 1vw;
-
-    }
-}
-
-.tinted-background {
-    background-color: #11111155;
-    height: 100%;
-    padding-bottom: 60px;
-}
-
-.pink-svg {
-    filter: invert(11%) sepia(98%) saturate(7084%) hue-rotate(308deg) brightness(92%) contrast(101%);
-}
-
-.hidden {
-    display: none;
-}
-
-.fullscreen-menu {
-    display: none;
-}
-
-.fullscreen-menu.fullscreen-menu-open {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    padding-top: 20vh;
-    background-color: #ffffffcc;
-
-    a {
-        display: block;
-        text-align: center;
-        padding: 0 19vw;
-        margin-bottom: 12vw;
-        font-size: 9vw;
-        font-weight: 600;
-        text-shadow: 0px 0.7vw #74747466;
-    }
-}
+/* DESKTOP CSS */
