@@ -15,9 +15,8 @@
     rel="stylesheet">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/main-desktop.css">
+
   <!-- <meta name="theme-color" content="#fafafa"> -->
 </head>
 
@@ -30,13 +29,13 @@
         <span></span>
       </button>
       <div class="fullscreen-menu" id="fullscreen-menu">
-        <a class="plain-link" href="#">OUR STORY</a>
-        <a class="plain-link" href="#">SPACE VENTURE</a>
-        <a class="plain-link" href="#">ABOUT MAJOR TOM</a>
+        <a class="plain-link" href="#">Our Story</a>
+        <a class="plain-link" href="#">Space Venture</a>
+        <a class="plain-link" href="#">About Major Tom</a>
       </div>
     </header>
     <div class="lander-floater">
-      <h1>TO THE MOON</h1>
+      <h1>To the moon</h1>
       <a class="plain-link floater-link" href="#">
         Read our story
         <span class="arrow-right"></span>
@@ -60,7 +59,7 @@
         </blockquote>
       </div>
       <div class="col">
-        <blockquote class="desktop-only"> is very important. You should not give up unless you are forced to give up.
+        <blockquote class="desktop-only">Persistence is very important. You should not give up unless you are forced to give up.
         </blockquote>
         <p>Am I sitting in a tin can. Far above the world. Planet Earth is blue. And there's nothing I can do. Though
           I'm
@@ -91,17 +90,16 @@
     menuButton.addEventListener('click', toggleMenu);
 
     const fullscreenMenu = document.querySelector("#fullscreen-menu");
-    const landerFloater = document.querySelector(".lander-floater");
     function toggleMenu() {
       fullscreenMenu.classList.toggle("fullscreen-menu-open");
-      landerFloater.classList.toggle("fullscreen-menu-open");
     }
-    const cookieButton = document.querySelector("#cookie-button");
-    cookieButton.addEventListener('click', toggleHide);
-    const cookieFooter = document.querySelector("footer");
-    function toggleHide() {
-      cookieFooter.classList.toggle("hidden");
-    }
+    //const cookieButton = document.querySelector("#cookie-button");
+    //cookieButton.addEventListener('click', toggleHide);
+    //const cookieFooter = document.querySelector("footer");
+    //function toggleHide() {
+    //  cookieFooter.classList.toggle("hidden");
+    //}
   </script>
 </body>
+
 </html>
