@@ -89,7 +89,7 @@ a:hover .arrow-right{left:2vh}
 .second-page .tinted-background .col blockquote{font-size:3.4vh;font-style:italic;margin-bottom:-6vw;font-weight:400}
 .second-page .tinted-background .col blockquote.quotation-marks::before{content:open-quote}
 .second-page .tinted-background .col blockquote.quotation-marks::after{content:close-quote}
-.second-page .tinted-background .col blockquote.desktop-only{opacity:30%;display:inline;font-size:5vh;background:radial-gradient(#fff,#fff,#D200A2);background-clip:text;-webkit-background-clip:text;text-fill-color:transparent;-webkit-text-fill-color:transparent}
+.second-page .tinted-background .col blockquote.desktop-only{opacity:30%;display:inline;font-size:5vh;background:radial-gradient(#fff,#fff,#D200A2);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .second-page .tinted-background .col .pink-link{font-size:2vh}
 .second-page .tinted-background .col:nth-child(2){padding-top:15vh;grid-column:4/6}
 footer{position:fixed;z-index:5;display:flex;font-size:3vh;bottom:0;left:0;right:0;height:auto}
