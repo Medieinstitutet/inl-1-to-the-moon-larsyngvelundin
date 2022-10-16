@@ -476,7 +476,7 @@ button {
 .col {
   position: relative;
   padding: 8vw;
-  padding-bottom: 10vw;
+  padding-bottom: 0vw;
 }
 .col h2 {
   margin: 0px;
@@ -721,4 +721,4 @@ footer button {
     padding: 1vh;
     color: #ffffff;
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main copy.css.map */
